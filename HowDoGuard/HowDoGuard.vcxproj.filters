@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project">
+      <UniqueIdentifier>{b9fbe001-b732-4d5f-9e79-f49b14800cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Input">
+      <UniqueIdentifier>{094b31ed-0d38-44c1-86be-744ea679c102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Graphics">
+      <UniqueIdentifier>{c8060623-33ba-4ec5-ab06-d478cacb681a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Core">
+      <UniqueIdentifier>{a1c866d7-334d-4dee-9d1f-8fb42381ce0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Audio">
+      <UniqueIdentifier>{f61727e3-7814-49b6-b785-3344520bd5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Documents">
+      <UniqueIdentifier>{e7b49474-94ba-4f32-8554-3577c14d59df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Util">
+      <UniqueIdentifier>{793006fd-b241-4aa9-abd3-28e7ba870cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Timing">
+      <UniqueIdentifier>{b062224b-c4ae-4f0b-9aef-5eb9ad82a39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Tracking">
+      <UniqueIdentifier>{2bacf41f-f524-4ab8-ad26-c4a219c20147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Util\Geom">
+      <UniqueIdentifier>{50fab468-abfa-4db3-9ecb-e8712b867a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Events">
+      <UniqueIdentifier>{ee59ddae-7677-4c1d-978d-e068536ff43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Graphics\Text">
+      <UniqueIdentifier>{fb22db12-aa32-46d3-bb5f-337ac4a06818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Units">
+      <UniqueIdentifier>{95e397b9-0d18-418f-9d00-51bd199bf01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Data">
+      <UniqueIdentifier>{bb0fc34f-f277-47e4-8b99-22a54a83af24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets">
+      <UniqueIdentifier>{3f846128-9235-4072-8e26-78285a3f16ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Sheets">
+      <UniqueIdentifier>{7c3a5b70-387b-4f77-be6a-16d581bab6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Player">
+      <UniqueIdentifier>{92b59f47-f8ee-4507-9fa6-c1b91419d146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Config">
+      <UniqueIdentifier>{0e6fa3b6-cc5e-4d61-a846-f5c91dbc20b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Config\curl">
+      <UniqueIdentifier>{d3f9b07d-a038-4068-b752-b08d91201c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Config\toast">
+      <UniqueIdentifier>{f1cc1a42-dc95-440a-8fbe-e81bf5c7e93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Config\wolf">
+      <UniqueIdentifier>{05f622d5-e4cf-4d49-9856-95e308b57fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Config\ghost">
+      <UniqueIdentifier>{ab70f87c-0af9-44cc-badd-d3a488b874ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Sheets\curl">
+      <UniqueIdentifier>{a8480212-0e25-4ab4-9e87-b8710bf82248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Sheets\wolf">
+      <UniqueIdentifier>{6a4273fc-b592-4cae-844e-21d62a6399ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Assets\Sheets\toast">
+      <UniqueIdentifier>{fde4d629-2210-403a-b777-9a222ce6260a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Project\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Project\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryTracker.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Project\Util\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Project\Util\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Project\Util\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Project\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Project\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Project\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Project\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDispatcher.cpp">
+      <Filter>Project\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Project\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CachedText.cpp">
+      <Filter>Project\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Project\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUnit.cpp">
+      <Filter>Project\Units</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Project\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="InputState.cpp">
+      <Filter>Project\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="InputChange.cpp">
+      <Filter>Project\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Toast.cpp">
+      <Filter>Project\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ActiveUnit.cpp">
+      <Filter>Project\Units</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Project\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigLevel.cpp">
+      <Filter>Project\Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Project\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Project\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryTracker.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Project\Util\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Project\Util\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Project\Util\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Project\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Project\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Project\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventData.h">
+      <Filter>Project\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>Project\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Callbacks.h">
+      <Filter>Project\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDispatcher.h">
+      <Filter>Project\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Project\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CachedText.h">
+      <Filter>Project\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Project\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicUnit.h">
+      <Filter>Project\Units</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Project\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Project\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="InputState.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputChange.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInput.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputPress.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Toast.h">
+      <Filter>Project\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h">
+      <Filter>Project\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalState.h">
+      <Filter>Project\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveUnit.h">
+      <Filter>Project\Units</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Project\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStateChange.h">
+      <Filter>Project\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInputType.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerIndex.h">
+      <Filter>Project\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigLevel.h">
+      <Filter>Project\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>Project\Documents</Filter>
+    </None>
+    <None Include="assets\config\bg.cfg">
+      <Filter>Project\Assets\Config</Filter>
+    </None>
+    <None Include="assets\config\main.cfg">
+      <Filter>Project\Assets\Config</Filter>
+    </None>
+    <None Include="assets\config\curl\states.cfg">
+      <Filter>Project\Assets\Config\curl</Filter>
+    </None>
+    <None Include="assets\config\ghost\air_guard_stun.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\alk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\alp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ascending.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\descending.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\dhk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\dhp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\dlk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\dlp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\duck_guard.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\duck_guard_stun.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\duck_hit_stun.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\duck_start.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ducking.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ghk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ghp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\glk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\glp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\grab.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\grab_miss.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\grab_start.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\grabbed.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\guard.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\guard_stun.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\hit_stun.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\idle.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\juggle.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\jump_start.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\knockdown.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\landing.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\movement.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\recovery.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\states.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\walk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ahk.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\ahp.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\ghost\air_guard.cfg">
+      <Filter>Project\Assets\Config\ghost</Filter>
+    </None>
+    <None Include="assets\config\curl\character.cfg">
+      <Filter>Project\Assets\Config\curl</Filter>
+    </None>
+    <None Include="assets\config\curl\assets.cfg">
+      <Filter>Project\Assets\Config\curl</Filter>
+    </None>
+    <None Include="assets\config\curl\movement.cfg">
+      <Filter>Project\Assets\Config\curl</Filter>
+    </None>
+    <None Include="assets\config\toast\assets.cfg">
+      <Filter>Project\Assets\Config\toast</Filter>
+    </None>
+    <None Include="assets\config\toast\character.cfg">
+      <Filter>Project\Assets\Config\toast</Filter>
+    </None>
+    <None Include="assets\config\toast\movement.cfg">
+      <Filter>Project\Assets\Config\toast</Filter>
+    </None>
+    <None Include="assets\config\toast\states.cfg">
+      <Filter>Project\Assets\Config\toast</Filter>
+    </None>
+    <None Include="assets\config\wolf\assets.cfg">
+      <Filter>Project\Assets\Config\wolf</Filter>
+    </None>
+    <None Include="assets\config\wolf\character.cfg">
+      <Filter>Project\Assets\Config\wolf</Filter>
+    </None>
+    <None Include="assets\config\wolf\movement.cfg">
+      <Filter>Project\Assets\Config\wolf</Filter>
+    </None>
+    <None Include="assets\config\wolf\states.cfg">
+      <Filter>Project\Assets\Config\wolf</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\sheets\sprsht_tmp_bg.png">
+      <Filter>Project\Assets\Sheets</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_alp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ascending.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_descending.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_dhk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_dhp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_dlk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_dlp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_guard.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_guard_stun.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_hit_stun.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_start.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ducking.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ghk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ghp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_glk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_glp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_grab.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_grab_miss.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_grab_start.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_grabbed.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_guard.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_guard_stun.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_hit_stun.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_idle.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_juggle.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_jump_start.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_knockdown.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_landing.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_recovery.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_walk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ahk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_ahp.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_air_guard.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_air_guard_stun.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\curl\sprsht_curl_alk.png">
+      <Filter>Project\Assets\Sheets\curl</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ahk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ahp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_air_guard.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_air_guard_stun.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_alk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_alp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ascending.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_descending.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_dhk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_dhp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_dlk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_dlp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_guard.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_guard_stun.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_hit_stun.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_start.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ducking.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ghk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_ghp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_glk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_glp.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_grab.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_grab_miss.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_grab_start.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_grabbed.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_guard.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_guard_stun.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_hit_stun.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_idle.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_juggle.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_jump_start.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_knockdown.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_landing.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_recovery.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\toast\sprsht_toast_walk.png">
+      <Filter>Project\Assets\Sheets\toast</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_guard.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_guard_stun.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_hit_stun.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_start.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ducking.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ghk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ghp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_glk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_glp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab_miss.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab_start.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grabbed.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_guard.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_guard_stun.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_hit_stun.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_idle.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_juggle.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_jump_start.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_knockdown.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_landing.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_recovery.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_walk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ahk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ahp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_air_guard.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_air_guard_stun.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_alk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_alp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ascending.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_descending.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dhk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dhp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dlk.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dlp.png">
+      <Filter>Project\Assets\Sheets\wolf</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

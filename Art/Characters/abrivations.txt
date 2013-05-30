@@ -1,0 +1,23 @@
+gxx= grounded (standing) XX
+
+axx= in air xx
+
+dxx= ducking (crowching) xx
+
+xlp= x light punch
+
+xhp= x heavy punch
+
+xlk= x light kick
+
+xhk= x heavy kick
+
+sp= speical move
+
+ssp= super move
+
+xbs= x blockstun
+
+xgs= x guard stun
+
+xhs= x hit stun (reeling)

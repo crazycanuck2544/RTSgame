@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release2|Win32">
+      <Configuration>Release2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A896B0BB-9C3A-45A1-B014-6044D64B7C52}</ProjectGuid>
+    <RootNamespace>HowDoGuard</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release2|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release2|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Libraries\SDL\include\;..\Libraries\SDL_image\include\;..\Libraries\SDL_mixer\include\;..\Libraries\SDL_ttf\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Libraries\SDL\lib\x86\;..\Libraries\SDL_image\lib\;..\Libraries\SDL_mixer\lib\;..\Libraries\SDL_ttf\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release2|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Libraries\SDL\include\;..\Libraries\SDL_image\include\;..\Libraries\SDL_mixer\include\;..\Libraries\SDL_ttf\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Libraries\SDL\lib\x86\;..\Libraries\SDL_image\lib\;..\Libraries\SDL_mixer\lib\;..\Libraries\SDL_ttf\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Libraries\SDL\include\;..\Libraries\SDL_image\include\;..\Libraries\SDL_mixer\include\;..\Libraries\SDL_ttf\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\Libraries\SDL\lib\x86\;..\Libraries\SDL_image\lib\;..\Libraries\SDL_mixer\lib\;..\Libraries\SDL_ttf\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActiveUnit.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="BasicUnit.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ConfigLevel.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventDispatcher.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GraphicsSystem.cpp" />
+    <ClCompile Include="InputChange.cpp" />
+    <ClCompile Include="InputState.cpp" />
+    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MemoryTracker.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="CachedText.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Toast.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveUnit.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="BasicUnit.h" />
+    <ClInclude Include="Callbacks.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="ConfigLevel.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="Delegate.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventData.h" />
+    <ClInclude Include="EventDispatcher.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameInput.h" />
+    <ClInclude Include="GameInputType.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GraphicsSystem.h" />
+    <ClInclude Include="InputChange.h" />
+    <ClInclude Include="PlayerIndex.h" />
+    <ClInclude Include="InputPress.h" />
+    <ClInclude Include="InputState.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="MemoryTracker.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="PlayerStateChange.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="CachedText.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Toast.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="VerticalState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release2|Win32'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release2|Win32'">false</DeploymentContent>
+    </None>
+    <None Include="assets\config\bg.cfg" />
+    <None Include="assets\config\curl\assets.cfg" />
+    <None Include="assets\config\curl\character.cfg" />
+    <None Include="assets\config\curl\movement.cfg" />
+    <None Include="assets\config\curl\states.cfg" />
+    <None Include="assets\config\ghost\ahk.cfg" />
+    <None Include="assets\config\ghost\ahp.cfg" />
+    <None Include="assets\config\ghost\air_guard.cfg" />
+    <None Include="assets\config\ghost\air_guard_stun.cfg" />
+    <None Include="assets\config\ghost\alk.cfg" />
+    <None Include="assets\config\ghost\alp.cfg" />
+    <None Include="assets\config\ghost\ascending.cfg" />
+    <None Include="assets\config\ghost\descending.cfg" />
+    <None Include="assets\config\ghost\dhk.cfg" />
+    <None Include="assets\config\ghost\dhp.cfg" />
+    <None Include="assets\config\ghost\dlk.cfg" />
+    <None Include="assets\config\ghost\dlp.cfg" />
+    <None Include="assets\config\ghost\ducking.cfg" />
+    <None Include="assets\config\ghost\duck_guard.cfg" />
+    <None Include="assets\config\ghost\duck_guard_stun.cfg" />
+    <None Include="assets\config\ghost\duck_hit_stun.cfg" />
+    <None Include="assets\config\ghost\duck_start.cfg" />
+    <None Include="assets\config\ghost\ghk.cfg" />
+    <None Include="assets\config\ghost\ghp.cfg" />
+    <None Include="assets\config\ghost\glk.cfg" />
+    <None Include="assets\config\ghost\glp.cfg" />
+    <None Include="assets\config\ghost\grab.cfg" />
+    <None Include="assets\config\ghost\grabbed.cfg" />
+    <None Include="assets\config\ghost\grab_miss.cfg" />
+    <None Include="assets\config\ghost\grab_start.cfg" />
+    <None Include="assets\config\ghost\guard.cfg" />
+    <None Include="assets\config\ghost\guard_stun.cfg" />
+    <None Include="assets\config\ghost\hit_stun.cfg" />
+    <None Include="assets\config\ghost\idle.cfg" />
+    <None Include="assets\config\ghost\juggle.cfg" />
+    <None Include="assets\config\ghost\jump_start.cfg" />
+    <None Include="assets\config\ghost\knockdown.cfg" />
+    <None Include="assets\config\ghost\landing.cfg" />
+    <None Include="assets\config\ghost\movement.cfg" />
+    <None Include="assets\config\ghost\recovery.cfg" />
+    <None Include="assets\config\ghost\states.cfg" />
+    <None Include="assets\config\ghost\walk.cfg" />
+    <None Include="assets\config\main.cfg" />
+    <None Include="assets\config\toast\assets.cfg" />
+    <None Include="assets\config\toast\character.cfg" />
+    <None Include="assets\config\toast\movement.cfg" />
+    <None Include="assets\config\toast\states.cfg" />
+    <None Include="assets\config\wolf\assets.cfg" />
+    <None Include="assets\config\wolf\character.cfg" />
+    <None Include="assets\config\wolf\movement.cfg" />
+    <None Include="assets\config\wolf\states.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\sheets\curl\sprsht_curl_ahk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_ahp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_air_guard.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_air_guard_stun.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_alk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_alp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_ascending.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_descending.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_dhk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_dhp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_dlk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_dlp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_ducking.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_guard.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_guard_stun.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_hit_stun.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_duck_start.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_ghk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_ghp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_glk.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_glp.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_grab.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_grabbed.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_grab_miss.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_grab_start.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_guard.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_guard_stun.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_hit_stun.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_idle.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_juggle.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_jump_start.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_knockdown.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_landing.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_recovery.png" />
+    <Image Include="assets\sheets\curl\sprsht_curl_walk.png" />
+    <Image Include="assets\sheets\sprsht_tmp_bg.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ahk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ahp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_air_guard.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_air_guard_stun.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_alk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_alp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ascending.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_descending.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_dhk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_dhp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_dlk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_dlp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ducking.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_guard.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_guard_stun.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_hit_stun.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_duck_start.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ghk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_ghp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_glk.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_glp.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_grab.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_grabbed.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_grab_miss.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_grab_start.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_guard.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_guard_stun.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_hit_stun.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_idle.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_juggle.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_jump_start.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_knockdown.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_landing.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_recovery.png" />
+    <Image Include="assets\sheets\toast\sprsht_toast_walk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ahk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ahp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_air_guard.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_air_guard_stun.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_alk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_alp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ascending.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_descending.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dhk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dhp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dlk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_dlp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ducking.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_guard.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_guard_stun.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_hit_stun.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_duck_start.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ghk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_ghp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_glk.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_glp.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grabbed.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab_miss.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_grab_start.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_guard.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_guard_stun.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_hit_stun.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_idle.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_juggle.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_jump_start.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_knockdown.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_landing.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_recovery.png" />
+    <Image Include="assets\sheets\wolf\sprsht_wolf_walk.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
