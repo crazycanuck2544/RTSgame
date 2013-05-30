@@ -1,4 +1,4 @@
-HowDoGuard
+RTS Game
 ==========
 
-A fun project to make a fighting game
+A fun project to make a RTS game
